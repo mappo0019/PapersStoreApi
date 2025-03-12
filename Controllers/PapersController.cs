@@ -1,6 +1,7 @@
 using PapersApi.Models;
 using PapersApi.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace PapersApi.Controllers;
 
@@ -14,10 +15,12 @@ public class PapersController : ControllerBase
         _papersService = papersService;
 
     [HttpGet]
+    [RequestFormLimits(ValueLengthLimit = int.MaxValue, KeyLengthLimit = int.MaxValue, MultipartBodyLengthLimit = long.MaxValue)]
     public async Task<List<Paper>> Get() =>
         await _papersService.GetAsync();
 
     [HttpGet("{id:length(24)}")]
+    [RequestFormLimits(ValueLengthLimit = int.MaxValue, KeyLengthLimit = int.MaxValue, MultipartBodyLengthLimit = long.MaxValue)]
     public async Task<ActionResult<Paper>> Get(string id)
     {
         var paper = await _papersService.GetAsync(id);
@@ -31,6 +34,7 @@ public class PapersController : ControllerBase
     }
 
     [HttpPost]
+    [RequestFormLimits(ValueLengthLimit = int.MaxValue, KeyLengthLimit = int.MaxValue, MultipartBodyLengthLimit = long.MaxValue)]
     public async Task<IActionResult> Post(Paper newPaper)
     {
         await _papersService.CreateAsync(newPaper);
@@ -39,6 +43,7 @@ public class PapersController : ControllerBase
     }
 
     [HttpPut("{id:length(24)}")]
+    [RequestFormLimits(ValueLengthLimit = int.MaxValue, KeyLengthLimit = int.MaxValue, MultipartBodyLengthLimit = long.MaxValue)]
     public async Task<IActionResult> Update(string id, Paper updatedPaper)
     {
         var paper = await _papersService.GetAsync(id);
@@ -56,6 +61,7 @@ public class PapersController : ControllerBase
     }
 
     [HttpDelete("{id:length(24)}")]
+    [RequestFormLimits(ValueLengthLimit = int.MaxValue, KeyLengthLimit = int.MaxValue, MultipartBodyLengthLimit = long.MaxValue)]
     public async Task<IActionResult> Delete(string id)
     {
         var paper = await _papersService.GetAsync(id);

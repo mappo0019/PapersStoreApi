@@ -669,17 +669,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj",
+      "projectUniqueName": "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj",
       "projectName": "PapersStoreApi",
-      "projectPath": "C:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj",
+      "projectPath": "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj",
       "packagesPath": "C:\\Users\\mpz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\obj\\",
+      "outputPath": "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\NuGet.Config",
+        "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\NuGet.Config",
         "C:\\Users\\mpz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -741,7 +741,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
