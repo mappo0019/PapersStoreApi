@@ -20,9 +20,6 @@ public class UsersService
 
         _usersCollection = mongoDatabase.GetCollection<User>(
             papersDatabaseSettings.Value.UsersCollectionName);
-
-            Console.WriteLine("Hola" + mongoClient.ListDatabaseNames());
-
     }
 
     public async Task<List<User>> GetAsync() {

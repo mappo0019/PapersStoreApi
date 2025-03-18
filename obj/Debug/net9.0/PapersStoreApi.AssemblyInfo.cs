@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PapersStoreApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9622decb7791bc230098bf3bd4bc3cf21690bf5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89aa736e62038a5a5def7035f1bcfadcfc99cb7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PapersStoreApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PapersStoreApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
