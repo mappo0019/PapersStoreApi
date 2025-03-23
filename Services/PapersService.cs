@@ -24,8 +24,8 @@ public class PapersService
     public async Task<List<Paper>> GetAsync() =>
         await _papersCollection.Find(Builders<Paper>.Filter.Empty).ToListAsync();
 
-    public async Task<Paper?> GetAsync(string id) =>
-        await _papersCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+    public async Task<Paper?> GetAsync(string idUser) =>
+        await _papersCollection.Find(x => x.user == idUser).FirstOrDefaultAsync();
 
     public async Task CreateAsync(Paper newPaper) =>
         await _papersCollection.InsertOneAsync(newPaper);

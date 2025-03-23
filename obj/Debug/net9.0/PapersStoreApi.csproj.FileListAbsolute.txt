@@ -79,3 +79,4 @@ c:\Users\mpz\OneDrive - Nazaríes Information Technologies S.L\Desktop\PERSONAL\
 c:\Users\mpz\OneDrive - Nazaríes Information Technologies S.L\Desktop\PERSONAL\PapersStoreApi\obj\Debug\net9.0\PapersStoreApi.pdb
 c:\Users\mpz\OneDrive - Nazaríes Information Technologies S.L\Desktop\PERSONAL\PapersStoreApi\obj\Debug\net9.0\PapersStoreApi.genruntimeconfig.cache
 c:\Users\mpz\OneDrive - Nazaríes Information Technologies S.L\Desktop\PERSONAL\PapersStoreApi\obj\Debug\net9.0\ref\PapersStoreApi.dll
+c:\Users\Usuario\PapersStoreApi\obj\Debug\net9.0\PapersStoreApi.sourcelink.json

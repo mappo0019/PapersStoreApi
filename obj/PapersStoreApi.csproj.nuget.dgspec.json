@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj": {}
+    "c:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj": {
+    "c:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj",
+        "projectUniqueName": "c:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj",
         "projectName": "PapersStoreApi",
-        "projectPath": "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\PapersStoreApi.csproj",
-        "packagesPath": "C:\\Users\\mpz\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\obj\\",
+        "projectPath": "c:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Usuario\\PapersStoreApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "c:\\Users\\mpz\\OneDrive - Nazaríes Information Technologies S.L\\Desktop\\PERSONAL\\PapersStoreApi\\NuGet.Config",
-          "C:\\Users\\mpz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "c:\\Users\\Usuario\\PapersStoreApi\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -79,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

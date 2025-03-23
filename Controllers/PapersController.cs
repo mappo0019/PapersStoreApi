@@ -21,9 +21,9 @@ public class PapersController : ControllerBase
 
     [HttpGet("{id:length(24)}")]
     [RequestFormLimits(ValueLengthLimit = int.MaxValue, KeyLengthLimit = int.MaxValue, MultipartBodyLengthLimit = long.MaxValue)]
-    public async Task<ActionResult<Paper>> Get(string id)
+    public async Task<ActionResult<Paper>> Get(string idUser)
     {
-        var paper = await _papersService.GetAsync(id);
+        var paper = await _papersService.GetAsync(idUser);
 
         if (paper is null)
         {
