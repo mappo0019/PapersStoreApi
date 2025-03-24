@@ -11,7 +11,7 @@ public class Paper{
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public required string Id {get; set;}
-    public string? user {get; set;}
+    public required string user {get; set;}
     public required string[] raw {get;set;}
 
 }
