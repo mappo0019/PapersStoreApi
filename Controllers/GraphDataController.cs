@@ -33,6 +33,19 @@ public class GraphDataController : ControllerBase
         return graphData;
     }
 
+    [HttpGet("us")]
+    public async Task<ActionResult<GraphData>> GetGraphDataByUser(string user)
+    {
+        var graphData = await _graphDataService.GetGraphDataByUser(user);
+
+        if (graphData is null)
+        {
+            return NotFound();
+        }
+
+        return graphData;
+    }
+
     [HttpPost]
     [RequestFormLimits(ValueLengthLimit = int.MaxValue, KeyLengthLimit = int.MaxValue, MultipartBodyLengthLimit = long.MaxValue)]
     public async Task<IActionResult> Post(GraphData newGraphData)

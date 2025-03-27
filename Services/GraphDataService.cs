@@ -27,6 +27,10 @@ public class GraphDataService
     public async Task<GraphData?> GetAsync(string id) =>
         await _graphDataCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
+    public async Task<GraphData?> GetGraphDataByUser(string user) =>
+        await _graphDataCollection.Find(x=> x.user == user).FirstOrDefaultAsync();
+
+
     public async Task CreateAsync(GraphData newGraphData) =>
         await _graphDataCollection.InsertOneAsync(newGraphData);
 
