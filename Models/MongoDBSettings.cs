@@ -9,4 +9,5 @@ public class PapersDatabaseSettings
     public string UsersCollectionName { get; set; } = null!;
     public string ProjectsCollectionName { get; set; } = null!;
     public string PapersCollectionName { get; set; } = null!;
+    public string GraphDataCollectionName { get; set; } = null!;
 }

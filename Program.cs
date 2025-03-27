@@ -23,6 +23,7 @@ builder.Services.Configure<PapersDatabaseSettings>(
 builder.Services.AddSingleton<UsersService>();
 builder.Services.AddSingleton<ProjectsService>();
 builder.Services.AddSingleton<PapersService>();
+builder.Services.AddSingleton<GraphDataService>();
 
 builder.Services.AddControllers()
 .AddJsonOptions(

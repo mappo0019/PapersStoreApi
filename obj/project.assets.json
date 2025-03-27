@@ -669,17 +669,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj",
       "projectName": "PapersStoreApi",
-      "projectPath": "c:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj",
+      "projectPath": "C:\\Users\\Usuario\\PapersStoreApi\\PapersStoreApi.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Usuario\\PapersStoreApi\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\PapersStoreApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "c:\\Users\\Usuario\\PapersStoreApi\\NuGet.Config",
+        "C:\\Users\\Usuario\\PapersStoreApi\\NuGet.Config",
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
