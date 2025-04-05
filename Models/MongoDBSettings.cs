@@ -10,4 +10,5 @@ public class PapersDatabaseSettings
     public string ProjectsCollectionName { get; set; } = null!;
     public string PapersCollectionName { get; set; } = null!;
     public string GraphDataCollectionName { get; set; } = null!;
+    public string ProjectPapersCollectionName { get; set; } = null!;
 }
