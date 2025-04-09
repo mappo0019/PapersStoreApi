@@ -25,6 +25,7 @@ builder.Services.AddSingleton<ProjectsService>();
 builder.Services.AddSingleton<PapersService>();
 builder.Services.AddSingleton<GraphDataService>();
 builder.Services.AddSingleton<ProjectPapersService>();
+builder.Services.AddSingleton<LoginService>();
 
 builder.Services.AddControllers()
 .AddJsonOptions(
