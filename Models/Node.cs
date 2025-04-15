@@ -11,8 +11,9 @@ public class Node{
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public required string Ident {get; set;}
-    
     public required string id {get; set;}
-    public required string name {get; set;}
+    public required int height {get; set;}
+    public required int size {get; set;}
+    public required string color {get; set;}
     //ERROR NO RECONOCE ID SIN IDENT
 }
