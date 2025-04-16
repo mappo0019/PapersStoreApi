@@ -1,6 +1,7 @@
 using PapersApi.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace PapersApi.Services;
 
@@ -27,8 +28,9 @@ public class GraphDataService
     public async Task<GraphData?> GetAsync(string id) =>
         await _graphDataCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
-    public async Task<GraphData?> GetGraphDataByUser(string user) =>
-        await _graphDataCollection.Find(x=> x.user == user).FirstOrDefaultAsync();
+    public async Task<List<GraphData?>> GetGraphDataByUser(string user) =>
+        await _graphDataCollection.AsQueryable()
+        .Where(x=> x.user == user).ToListAsync();
 
 
     public async Task CreateAsync(GraphData newGraphData) =>

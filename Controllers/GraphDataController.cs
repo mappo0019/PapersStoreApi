@@ -34,16 +34,9 @@ public class GraphDataController : ControllerBase
     }
 
     [HttpGet("us")]
-    public async Task<ActionResult<GraphData>> GetGraphDataByUser(string user)
+    public async Task<ActionResult<List<GraphData?>>> GetGraphDataByUser(string user)
     {
-        var graphData = await _graphDataService.GetGraphDataByUser(user);
-
-        if (graphData is null)
-        {
-            return NotFound();
-        }
-
-        return graphData;
+        return await _graphDataService.GetGraphDataByUser(user);
     }
 
     [HttpPost]
