@@ -43,6 +43,19 @@ public class UsersController : ControllerBase
         return user;
     }
 
+    [HttpGet("open")]
+    public async Task<ActionResult<User>> GetUserByOpenAlexId(string id)
+    {
+        var user = await _usersService.GetUserByOpenAlexId(id);
+
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        return user;
+    }
+
     [HttpPost]
     public async Task<IActionResult> Post(User newUser)
     {

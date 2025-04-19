@@ -34,8 +34,12 @@ public class UsersService
     public async Task<User?> GetAsync(string id) =>
         await _usersCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
-        public async Task<User?> GetUserByName(string name) =>
+    public async Task<User?> GetUserByName(string name) =>
         await _usersCollection.Find(x=> x.name == name).FirstOrDefaultAsync();
+
+    public async Task<User?> GetUserByOpenAlexId(string id) =>
+        await _usersCollection.Find(x=> x.openAlex_id == id).FirstOrDefaultAsync();
+
 
     public async Task CreateAsync(User newUser) =>
         await _usersCollection.InsertOneAsync(newUser);

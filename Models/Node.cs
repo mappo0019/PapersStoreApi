@@ -15,5 +15,4 @@ public class Node{
     public required int height {get; set;}
     public required int size {get; set;}
     public required string color {get; set;}
-    //ERROR NO RECONOCE ID SIN IDENT
 }
