@@ -12,6 +12,7 @@ public class GraphData{
     [BsonRepresentation(BsonType.ObjectId)]
     public required string Id {get; set;}
     public required string user {get; set;}
+    public required int year {get; set;}
     public required Node[]? authors {get;set;}
     public required Link[]? relationship {get;set;}
 

@@ -34,9 +34,9 @@ public class GraphDataController : ControllerBase
     }
 
     [HttpGet("us")]
-    public async Task<ActionResult<List<GraphData?>>> GetGraphDataByUser(string user)
+    public async Task<ActionResult<List<GraphData?>>> GetGraphDataByUserAndDate(string user, int date1=0, int date2=-1)
     {
-        return await _graphDataService.GetGraphDataByUser(user);
+        return await _graphDataService.GetGraphDataByUserAndDate(user, date1, date2);
     }
 
     [HttpPost]

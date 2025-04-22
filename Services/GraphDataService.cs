@@ -28,9 +28,10 @@ public class GraphDataService
     public async Task<GraphData?> GetAsync(string id) =>
         await _graphDataCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
-    public async Task<List<GraphData?>> GetGraphDataByUser(string user) =>
+    public async Task<List<GraphData?>> GetGraphDataByUserAndDate(string user, int date1, int date2)=>
         await _graphDataCollection.AsQueryable()
-        .Where(x=> x.user == user).ToListAsync();
+        .Where(x=> x.user == user && x.year >= date1 && (date2>= 0? x.year <= date2:x.year >= date1)).ToListAsync();
+        
 
 
     public async Task CreateAsync(GraphData newGraphData) =>
