@@ -32,8 +32,6 @@ public class GraphDataService
         await _graphDataCollection.AsQueryable()
         .Where(x=> x.user == user && x.year >= date1 && (date2>= 0? x.year <= date2:x.year >= date1)).ToListAsync();
         
-
-
     public async Task CreateAsync(GraphData newGraphData) =>
         await _graphDataCollection.InsertOneAsync(newGraphData);
 

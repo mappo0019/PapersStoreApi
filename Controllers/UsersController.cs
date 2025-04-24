@@ -31,9 +31,9 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("us")]
-    public async Task<ActionResult<User>> GetUserByName(string name)
+    public async Task<ActionResult<User>> GetUserByName(string username)
     {
-        var user = await _usersService.GetUserByName(name);
+        var user = await _usersService.GetUserByName(username);
 
         if (user is null)
         {

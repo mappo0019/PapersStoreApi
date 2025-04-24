@@ -13,6 +13,5 @@ public class Paper{
     public required string Id {get; set;}
     public required string user {get; set;}
     public required string[] raw {get;set;}
-    public Node[]? authors {get;set;}
 
 }
