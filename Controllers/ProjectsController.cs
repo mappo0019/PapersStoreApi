@@ -30,6 +30,19 @@ public class ProjectsController : ControllerBase
         return project;
     }
 
+    [HttpGet("us")]
+    public async Task<ActionResult<List<Project?>>> GetProjectByUser(string user)
+    {
+        var project = await _projectsService.GetProjectByUser(user);
+
+        if (project is null)
+        {
+            return NotFound();
+        }
+
+        return project;
+    }
+
     [HttpPost]
     public async Task<IActionResult> Post(Project newProject)
     {

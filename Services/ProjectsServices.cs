@@ -1,6 +1,7 @@
 using PapersApi.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace PapersApi.Services;
 
@@ -26,6 +27,11 @@ public class ProjectsService
 
     public async Task<Project?> GetAsync(string id) =>
         await _projectsCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+
+    public async Task<List<Project>?> GetProjectByUser(string user) =>
+
+    await _projectsCollection.AsQueryable().Where(x=> x.main_researcher == user).ToListAsync();
+
 
     public async Task CreateAsync(Project newProject) =>
         await _projectsCollection.InsertOneAsync(newProject);
