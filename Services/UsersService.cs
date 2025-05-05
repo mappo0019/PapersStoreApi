@@ -1,7 +1,7 @@
 using PapersApi.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using MongoDB.Bson;
+using MongoDB.Driver.Linq;
 
 namespace PapersApi.Services;
 
@@ -40,6 +40,8 @@ public class UsersService
     public async Task<User?> GetUserByOpenAlexId(string id) =>
         await _usersCollection.Find(x=> x.openAlex_id == id).FirstOrDefaultAsync();
 
+    public async Task<List<User>> GetUserByProject(string project)=>
+         await _usersCollection.Find(Builders<User>.Filter.ElemMatch(z => z.project, a => a == project)).ToListAsync();
 
     public async Task CreateAsync(User newUser) =>
         await _usersCollection.InsertOneAsync(newUser);
